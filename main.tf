@@ -2,10 +2,9 @@ resource "local_file" "deployment_info" {
   filename = "deployment-info.txt"
 
   content = <<EOT
-Project: GitOps Infra Deployment
+Project: GitOps Infra Deployment v2
 Environment: Production
-Deployment Method: Terraform
-Trigger: Pull Request Merge
-Status: Successful
+Approved Through Pull Request
+Applied After Merge
 EOT
 }
